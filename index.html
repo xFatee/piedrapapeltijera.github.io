@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel o Tijera</title>
+    <script src="juego.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body><div>
+    <audio src="Minecraft Level Up Sound Effect.mp3" id="victoria"></audio>
+    <audio src="Efecto de Sonido Steve de Minecraft.mp3" id="derrota"></audio>
+    <h2>Piedra Papel o Tijera</h2>
+    <p>Elige: <select id="options" onchange="juego()"> 
+        <option id="error" disabled selected value="">Selecciona una opción</option>
+        <option value="Piedra">Piedra</option>
+        <option value="Papel">Papel</option>
+        <option value="Tijera">Tijera</option>
+    </select></p>
+    <p>Tu elección: <input readonly type="text" id="eleccion"></p>
+    <button onclick="jugar()">¡JUGAR!</button>
+
+    <p>Tu oponente elige: <input readonly type="text" id="botSeleccion"></p>
+    <p class="result" id="result"><p>
+    </div>
+</body>
+</html>
